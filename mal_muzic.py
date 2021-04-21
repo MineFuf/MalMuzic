@@ -57,8 +57,6 @@ for list in lists:
     p = path.join(main_fold, list)
     if path.isdir(p):
         downloaded_files.update({file:list for file in os.listdir(p)})
-    else:
-        continue
 
 # loop over all types of lists
 for idx_type, list_type in enumerate(lists):
