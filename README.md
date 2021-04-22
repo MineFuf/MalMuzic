@@ -19,6 +19,21 @@ When you want all your openings and endings from your anime list, currently only
 - Cancel download
 
 # Version 1.0
-First version, made in one day
-Propably buggy, haven't tested much yet, not that anyone's gonna use it anyway
-Using only command line interface
+- First version, made in one day
+- Propably buggy, haven't tested much yet, not that anyone's gonna use it anyway
+- Using only command line interface
+
+- [One File](https://github.com/MineFuf/MalMuzic/raw/master/releases/mal_muzic__1.0_onefile.exe), just download and run
+- [Source Code](https://github.com/MineFuf/MalMuzic/raw/master/releases/mal_muzic__1.0_source_code.zip), download, extract, install all packages in requirements.txt or run "pip install requirements.txt"
+
+# Version 2.0
+- Made in 2 days
+- Still buggy, but usable, will work on fixing them
+- Using [PysimpleGuiQt](https://pypi.org/project/PySimpleGUIQt/) for UI
+- Allows downloading multiple songs in parallel
+- You can choose what to do when file already downloaded
+- Simple progress bars for all threads
+
+- [One File](https://github.com/MineFuf/MalMuzic/raw/master/releases/mal_muzic__2.0_onefile.exe), just download and run
+- [One Dir](https://github.com/MineFuf/MalMuzic/raw/master/releases/mal_muzic__2.0_onedir.zip), download, extract and run "mal_muzic_gui.exe" in folder mal_muzic_gui
+- [Source Code](https://github.com/MineFuf/MalMuzic/raw/master/releases/mal_muzic__2.0_source_code.zip), download, extract, install all packages in requirements.txt or run "pip 
