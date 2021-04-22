@@ -39,4 +39,4 @@ When you want all your openings and endings from your anime list, currently only
 #
 
 - [One Dir](https://github.com/MineFuf/MalMuzic/raw/master/releases/mal_muzic__2.0_onedir.zip), download, extract and run "mal_muzic_gui.exe" in folder mal_muzic_gui
-- [Source Code](https://github.com/MineFuf/MalMuzic/raw/master/releases/mal_muzic__2.0_source_code.zip), download, extract, install all packages in requirements.txt or run "pip 
+- [Source Code](https://github.com/MineFuf/MalMuzic/raw/master/releases/mal_muzic__2.0_source_code.zip), download, extract, install all packages in requirements.txt or run "pip install requirements.txt"
