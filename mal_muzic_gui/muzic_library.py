@@ -23,7 +23,7 @@ def copy(user, type, name):
     _user, _type = files_already_downloaded[name]
     shutil.copy2(path_joins(_user, _type, name), path_joins(user, type, name))
 
-def move(user, name, type):
+def move(user, type, name):
     _user, _type = files_already_downloaded[name]
     os.rename(path_joins(_user, _type, name), path_joins(user, type, name))
     
@@ -34,15 +34,21 @@ library_dir = get_default_dir()
 files_already_downloaded: Dict[str, Tuple[str, str]] = {}
 already_downloaded_count = 0
 usernames = []
-# loop throught all users
-for user in os.listdir(library_dir):
-    user_dir = path.join(library_dir, user)
-    usernames.append(user)
-    # loop throught all lists that we can download to
-    for list in DEFAULT_LISTS:
-        p = path.join(user_dir, list)
-        if path.isdir(p):
-            files = os.listdir(p)
-            already_downloaded_count += len(files)
-            files_already_downloaded.update({file:(user, list) for file in files})
-del files
+
+def init_library(dir=None):
+    global library_dir, already_downloaded_count, files_already_downloaded, usernames
+    if dir is not None:
+        library_dir = dir
+    # loop throught all users
+    print('[I] Looking for downloaded files')
+    for user in os.listdir(library_dir):
+        user_dir = path.join(library_dir, user)
+        usernames.append(user)
+        # loop throught all lists that we can download to
+        for list in DEFAULT_LISTS:
+            p = path.join(user_dir, list)
+            if path.isdir(p):
+                files = os.listdir(p)
+                already_downloaded_count += len(files)
+                files_already_downloaded.update({file:(user, list) for file in files})
+    print(f'[I] Found {already_downloaded_count} files')
