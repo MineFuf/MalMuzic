@@ -1,2 +1,24 @@
-# MalMuzic
-Downloads all or not music from your mal account to different folder based on if completed etc.
+## Welcome to MalMuzic
+
+#### Thanks for stopping by.
+
+## What is MalMuzic?
+
+It's simple program mabe for my fellow weebs.
+When you want all your openings and endings from your anime list, currently only [MAL](https://myanimelist.net/), you can downloaded them, and then later just start again, just update your library without downloading anything again. Your songs will be downloaded to folders like "completed" and "onhold" etc.
+
+## To do:
+- Fix a lot of bug (but somewhat working anyway)
+- Add filters such as only anime with more than 7 score on your list
+- Add option to download only to download only ops or eds
+- Enable downloading not from anime list but from just lists of mal ids
+- Add blacklist for anime you don't wanna download from your list
+- Be able to choose what lists to download, useful when you don't wanna download lists like dropped or ptw
+- Saving and loading configs, when you don't wann a remember your configuration
+- Theme selector
+- Cancel download
+
+# Version 1.0
+First version, made in one day
+Propably buggy, haven't tested much yet, not that anyone's gonna use it anyway
+Using only command line interface
