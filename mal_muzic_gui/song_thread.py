@@ -28,6 +28,7 @@ class SongDownloadThread:
             print(f'[I] Canceling song download thread {self.index}')
             self.audio.cancel()
             print(f'[I] Succesfully stopped')
+            self.percent = 100
             self.running = False
         
         def _callback(total, recvd, ratio, rate, eta):
@@ -50,6 +51,7 @@ class SongDownloadThread:
             self.running = False
         
         print(f'[I] Download {self.index} succesfully ended')
+        self.percent = 100
         callback()
         self.running = False
         

@@ -212,7 +212,7 @@ def main():
     layout = [
         [
             sg.Text('Username: '),
-            sg.Input('morsee31', key='username_input', enable_events=True),
+            sg.Input('', key='username_input', enable_events=True),
             sg.Button('Check', key='username_button')],
         [
             sg.Text('Anime Music Dir: '),
@@ -296,8 +296,9 @@ def main():
             # progresses[values[event][0]][1].UpdateBar(values[event][2])
             for i in range(len(st.threads)):
                 if st.threads[i] is not None:
-                    progresses[i][1].UpdateBar(st.threads[i][1].percent)
-                    progresses[i][0].update(value=st.threads[i][1].request + ': ' + str(st.threads[i][1].total_kb) + 'kB, ' + str(round(st.threads[i][1].rate, 1)) + 'kB/s')
+                    if hasattr(st.threads[i][1], 'percent'):
+                        progresses[i][1].UpdateBar(st.threads[i][1].percent)
+                        progresses[i][0].update(value=st.threads[i][1].request + ': ' + str(st.threads[i][1].total_kb) + 'kB, ' + str(round(st.threads[i][1].rate, 1)) + 'kB/s')
             
     if run_thread is not None:
         print('[I] Download thread still running, joining with it.')
