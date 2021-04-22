@@ -16,6 +16,7 @@ When you want all your openings and endings from your anime list, currently only
 - Be able to choose what lists to download, useful when you don't wanna download lists like dropped or ptw
 - Saving and loading configs, when you don't wann a remember your configuration
 - Theme selector
+- Cancel download
 
 # Version 1.0
 First version, made in one day
